@@ -3,37 +3,100 @@
 }
 
 body {
-    margin: 0;
     font-family: 'Roboto', sans-serif;
     background-image: url("Images/dragons.png");
     background-attachment: fixed;
 }
 
-header {
+.header {
     text-align: center;
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
     text-decoration: none;
-    color: #708090;
+    color: #696969;
     font-size: 24px;
 }
 
 .dragonContainer {
+    margin: 0 auto;
+}
+
+.outerContainer {
+    float: left;
+    width: 25%;
+    padding: 15px;
 }
 
 .dragonBox {
-    width: 25%;
+    padding-bottom: 15px;
+    border: 1px solid gray;
+    border-radius: 25px;
 }
 
 .dragonImage {
     height: 300px;
-    width: 300px;
+    width: 100%;
     border-radius: 25px;
 }
 
-dragonName {
+.dragonName {
     font-family: 'Raleway', sans-serif;
     text-align: center;
-    font-size: 16px;
-    color: #708090;
+    font-size: 22px;
+    color: #696969;
+}
+
+ul li {
+    font-family: 'Raleway', sans-serif;
+    /*text-align: center;*/
+    font-size: 18px;
+    color: #696969;
+    list-style: none;
+    padding-inline-start: 0px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+button {
+    height: 40px;
+    width: 200px;
+    font-size: 22px;
+    color: #ffffff;
+    border-radius: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+    background-color: #1846B5;
+    margin-top: 30px;
+}
+
+.dragonButton {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+
+
+
+@media only screen and (max-width: 900px) {
+    .dragonContainer {
+        width: 600px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .dragonContainer {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .column {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
 }
