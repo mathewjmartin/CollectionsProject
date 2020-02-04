@@ -1,3 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
     background-image: url("Images/dragons.png");
+    background-attachment: fixed;
+}
+
+header {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    color: #708090;
+    font-size: 24px;
+}
+
+.dragonContainer {
+}
+
+.dragonBox {
+    width: 25%;
+}
+
+.dragonImage {
+    height: 300px;
+    width: 300px;
+    border-radius: 25px;
+}
+
+dragonName {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-size: 16px;
+    color: #708090;
 }
