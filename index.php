@@ -8,11 +8,14 @@
     <title>Dragon's Collection</title>
 </head>
 
+<body>
         <div class="header">
             <h2>Dragon’s Race to the Edge Characters</h2>
         </div>
 
-        <div class="dragonContainer">
+        <section class="dragonContainer">
+
+            <div class="outerContainer">
             <div class="dragonBox">
                 <img class="dragonImage" src="Images/Toothless.jpg">
                 <h3 class="dragonName">Toothless</h3>
@@ -24,7 +27,9 @@
                     <li>Firepower: 14</li>
                 </ul>
             </div>
+            </div>
 
+            <div class="outerContainer">
             <div class="dragonBox">
                 <img class="dragonImage" src="Images/hookfang.jpg">
                 <h3 class="dragonName">Hookfang</h3>
@@ -36,7 +41,9 @@
                     <li>Firepower: 18</li>
                 </ul>
             </div>
+            </div>
 
+            <div class="outerContainer">
             <div class="dragonBox">
                 <img class="dragonImage" src="Images/meatlug.jpg">
                 <h3 class="dragonName">Meatlug</h3>
@@ -48,7 +55,9 @@
                     <li>Firepower: 17</li>
                 </ul>
             </div>
+            </div>
 
+            <div class="outerContainer">
             <div class="dragonBox">
                 <img class="dragonImage" src="Images/stormfly.jpg">
                 <h3 class="dragonName">Stormfly</h3>
@@ -60,54 +69,62 @@
                     <li>Firepower: 20</li>
                 </ul>
             </div>
-
-            <div class="dragonBox">
-                <img class="dragonImage" src="Images/Toothless.jpg">
-                <h3 class="dragonName">Toothless</h3>
-                <ul>
-                    <li>Rider: </li>
-                    <li>Colour: </li>
-                    <li>Attack: </li>
-                    <li>Speed: </li>
-                    <li>Firepower: </li>
-                </ul>
             </div>
 
-            <div class="dragonBox">
-                <img class="dragonImage" src="Images/hookfang.jpg">
-                <h3 class="dragonName">Toothless</h3>
-                <ul>
-                    <li>Rider: </li>
-                    <li>Colour: </li>
-                    <li>Attack: </li>
-                    <li>Speed: </li>
-                    <li>Firepower: </li>
-                </ul>
-            </div>
 
-            <div class="dragonBox">
-                <img class="dragonImage" src="Images/Toothless.jpg">
-                <h3 class="dragonName">Toothless</h3>
-                <ul>
-                    <li>Rider: </li>
-                    <li>Colour: </li>
-                    <li>Attack: </li>
-                    <li>Speed: </li>
-                    <li>Firepower: </li>
-                </ul>
-            </div>
 
-            <div class="dragonTile">
-                <img class="dragonImage" src="Images/Toothless.jpg">
-                <h3 class="dragonName">Toothless</h3>
-                <ul>
-                    <li>Rider: </li>
-                    <li>Colour: </li>
-                    <li>Attack: </li>
-                    <li>Speed: </li>
-                    <li>Firepower: </li>
-                </ul>
-            </div>
-        </div>
+<!--            <div class="dragonBox">-->
+<!--                <img class="dragonImage" src="Images/Toothless.jpg">-->
+<!--                <h3 class="dragonName">Toothless</h3>-->
+<!--                <ul>-->
+<!--                    <li>Rider: </li>-->
+<!--                    <li>Colour: </li>-->
+<!--                    <li>Attack: </li>-->
+<!--                    <li>Speed: </li>-->
+<!--                    <li>Firepower: </li>-->
+<!--                </ul>-->
+<!--            </div>-->
+<!---->
+<!--            <div class="dragonBox">-->
+<!--                <img class="dragonImage" src="Images/hookfang.jpg">-->
+<!--                <h3 class="dragonName">Toothless</h3>-->
+<!--                <ul>-->
+<!--                    <li>Rider: </li>-->
+<!--                    <li>Colour: </li>-->
+<!--                    <li>Attack: </li>-->
+<!--                    <li>Speed: </li>-->
+<!--                    <li>Firepower: </li>-->
+<!--                </ul>-->
+<!--            </div>-->
+<!---->
+<!--            <div class="dragonBox">-->
+<!--                <img class="dragonImage" src="Images/Toothless.jpg">-->
+<!--                <h3 class="dragonName">Toothless</h3>-->
+<!--                <ul>-->
+<!--                    <li>Rider: </li>-->
+<!--                    <li>Colour: </li>-->
+<!--                    <li>Attack: </li>-->
+<!--                    <li>Speed: </li>-->
+<!--                    <li>Firepower: </li>-->
+<!--                </ul>-->
+<!--            </div>-->
+<!---->
+<!--            <div class="dragonTile">-->
+<!--                <img class="dragonImage" src="Images/Toothless.jpg">-->
+<!--                <h3 class="dragonName">Toothless</h3>-->
+<!--                <ul>-->
+<!--                    <li>Rider: </li>-->
+<!--                    <li>Colour: </li>-->
+<!--                    <li>Attack: </li>-->
+<!--                    <li>Speed: </li>-->
+<!--                    <li>Firepower: </li>-->
+<!--                </ul>-->
+<!--            </div>-->
 
-    </body>
+            <div>
+                <button>Add a Dragon >></button>
+            </div>
+        </section>
+
+
+</body>
