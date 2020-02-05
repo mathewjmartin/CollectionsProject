@@ -7,7 +7,7 @@ function getAllDragons($db) {
     return $query->fetchAll();
 }
 
-function displayDragon($dragons) {
+function displayDragon(array $dragons): string {
     $output = "";
     foreach($dragons as $dragon) {
         $output .= "<div class='outerContainer'>
@@ -26,7 +26,6 @@ function displayDragon($dragons) {
     }
     return $output;
 
-    var_dump($dragon);
 
 
 }
