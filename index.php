@@ -1,6 +1,8 @@
 <?php
 
-
+require_once 'functions.php';
+require_once 'dbconnect.php';
+$db=db();
 
 ?>
 
@@ -12,6 +14,7 @@
     <link rel="stylesheet" type="text/css" href="normalize.css" />
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width">
     <title>Dragon's Collection</title>
 </head>
 
@@ -30,7 +33,7 @@
                     <li>Rider: Hiccup</li>
                     <li>Colour: Black</li>
                     <li>Attack: 15</li>
-                    <li>Speed: 20</li>
+                    <li>Speed: 30</li>
                     <li>Firepower: 14</li>
                 </ul>
             </div>
@@ -58,7 +61,7 @@
                     <li>Rider: Fishlegs</li>
                     <li>Colour: Brown</li>
                     <li>Attack: 19</li>
-                    <li>Speed: 30</li>
+                    <li>Speed: 20</li>
                     <li>Firepower: 17</li>
                 </ul>
             </div>
