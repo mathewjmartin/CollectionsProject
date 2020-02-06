@@ -35,7 +35,11 @@ $dragonHTML = displayDragon($dragons);
 
             ?>
 
-
+        </section>
+        
+        <div class="dragonButton">
+            <button>Add a Dragon >></button>
+        </div>
 
 
 
