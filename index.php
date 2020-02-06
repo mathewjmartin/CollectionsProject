@@ -36,9 +36,9 @@ $dragonHTML = displayDragon($dragons);
             ?>
 
         </section>
-        
+
         <div class="dragonButton">
-            <button>Add a Dragon >></button>
+            <button><a href="form.php">Add a Dragon >></button>
         </div>
 
 
