@@ -14,6 +14,18 @@ if(!isset($_POST['name'])) {
     $speed = $_POST['speed'];
     $firepower = $_POST['firepower'];
 
+    if (validateInputString($name)=="Error"){
+        header('Location: form.php');
+    }
+
+    if (validateInputString($rider)=="Error"){
+        header('Location: form.php');
+    }
+
+    if (validateInputString($colour)=="Error"){
+        header('Location: form.php');
+    }
+
     //create database connection
     $db = db();
 
