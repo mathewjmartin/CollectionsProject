@@ -1,12 +1,26 @@
 <?php
 
-function getAllDragons($db) {
+/**
+ * Retrieves dragons from DB
+ *
+ * @param PDO $db connection
+ *
+ * @return array dragons from db
+ */
+function getAllDragons(PDO $db): array {
     $query = $db->prepare("SELECT `id`, `name`, `colour`, `rider`, `attack`, `speed`, `firepower`, `images`
     FROM `dragons`;");
     $query->execute();
     return $query->fetchAll();
 }
 
+/**
+ * Creates HTML from dragon data
+ *
+ * @param array $dragons assoc array of dragons
+ *
+ * @return string generated html
+ */
 function displayDragon(array $dragons): string {
     $output = "";
     foreach($dragons as $dragon) {
@@ -25,7 +39,4 @@ function displayDragon(array $dragons): string {
                     </div>";
     }
     return $output;
-
-
-
 }
