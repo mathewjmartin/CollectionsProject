@@ -16,37 +16,30 @@
     </div>
 
     <div class="addDragonContainer">
-            <form action="/add.php" method="get">
+            <form method="POST" action="add.php">
                 Name: <br>
-                <input type="text" name="name" value="" placeholder="eg: Toothless">
+                <input type="text" name="name" value="" placeholder="eg: Toothless" required>
                 <br><br>
                 Rider: <br>
-                <input type="text" name="rider" value="" placeholder="eg: Hiccup">
+                <input type="text" name="rider" value="" placeholder="eg: Hiccup" required>
                 <br><br>
                 Colour: <br>
-                <input type="text" name="colour" value="" placeholder="eg: Blue">
+                <input type="text" name="colour" value="" placeholder="eg: Blue" required>
                 <br><br>
                 Attack: <br>
-                <input type="text" name="attack" value=""placeholder="eg: 15">
+                <input type="text" name="attack" value=""placeholder="eg: 15" required>
                 <br><br>
                 Speed: <br>
-                <input type="text" name="speed" value="" placeholder="eg: 25">
+                <input type="text" name="speed" value="" placeholder="eg: 25" required>
                 <br><br>
                 Firepower: <br>
-                <input type="text" name="firepower" value="" placeholder="eg: 35">
+                <input type="text" name="firepower" value="" placeholder="eg: 35" required>
                 <br><br>
-                <input type="submit" value="Add Dragon">
+                <input type="submit" value="Add Dragon to Collection">
             </form>
     </div>
-
-<!--    <h2>Back to the dragons!</h2>-->
 
 </body>
 </html>
 
 
-
-<!--</section>-->
-<!--<div class="dragonButton">-->
-<!--    <button>Add a Dragon >></button>-->
-<!--</div>-->
