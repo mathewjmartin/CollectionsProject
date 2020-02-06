@@ -41,6 +41,18 @@ function displayDragon(array $dragons): string {
     return $output;
 }
 
+/**
+ * Function to take user input and put it into the database to be shown on the index.php page
+ *
+ * @param $name
+ * @param $rider
+ * @param $colour
+ * @param $attack
+ * @param $speed
+ * @param $firepower
+ * @param $db
+ * @return mixed
+ */
 function insertData($name, $rider, $colour, $attack, $speed, $firepower, $db) {
     $query = $db->prepare("INSERT INTO `dragons`(`name`, `rider`, `colour`, `attack`, `speed`, `firepower`)
                             VALUES (:name, :rider, :colour, :attack, :speed, :firepower)");
@@ -52,3 +64,19 @@ function insertData($name, $rider, $colour, $attack, $speed, $firepower, $db) {
     $query->bindParam(':firepower', $firepower);
     return $query->execute();
 }
+
+/** Check the string input is greater than 0 and less than 255
+ *
+ * @param string $input, input from PDO $_POST element
+ * @return string, return the input if passed, throw error if not
+ */
+function validateInputString(string $input): bool {
+    $input=trim($input);
+    if (!(strlen($input) > 0 && strlen($input) < 255)) {
+        return "Error";
+    }
+    $input = filter_var($input, FILTER_SANITIZE_STRING, FILTER_FLAG_ENCODE_LOW | FILTER_FLAG_ENCODE_AMP);
+    return $input;
+}
+
+
