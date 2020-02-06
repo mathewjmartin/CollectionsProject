@@ -40,3 +40,15 @@ function displayDragon(array $dragons): string {
     }
     return $output;
 }
+
+function insertData($name, $rider, $colour, $attack, $speed, $firepower, $db) {
+    $query = $db->prepare("INSERT INTO `dragons`(`name`, `rider`, `colour`, `attack`, `speed`, `firepower`)
+                            VALUES (:name, :rider, :colour, :attack, :speed, :firepower)");
+    $query->bindParam(':name', $name);
+    $query->bindParam(':rider', $rider);
+    $query->bindParam(':colour', $colour);
+    $query->bindParam(':attack', $attack);
+    $query->bindParam(':speed', $speed);
+    $query->bindParam(':firepower', $firepower);
+    return $query->execute();
+}
