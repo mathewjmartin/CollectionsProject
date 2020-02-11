@@ -7,7 +7,7 @@
 #
 # Host: 127.0.0.1 (MySQL 5.7.29)
 # Database: matt_collection
-# Generation Time: 2020-02-06 10:37:01 +0000
+# Generation Time: 2020-02-06 15:30:16 +0000
 # ************************************************************
 
 
@@ -33,7 +33,7 @@ CREATE TABLE `dragons` (
   `attack` int(20) unsigned NOT NULL,
   `speed` int(20) unsigned NOT NULL,
   `firepower` int(20) unsigned NOT NULL,
-  `images` varchar(255) NOT NULL DEFAULT '',
+  `images` varchar(255) NOT NULL DEFAULT 'Images/toothless.jpg',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
